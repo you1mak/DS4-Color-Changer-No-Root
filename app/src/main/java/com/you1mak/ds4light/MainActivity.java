@@ -326,7 +326,7 @@ public class MainActivity extends Activity {
             ringPaint.setStyle(Paint.Style.STROKE);
             ringPaint.setStrokeWidth(dp(2));
             ringPaint.setColor(Color.WHITE);
-            float angle = (float) Math.toRadians(hue - 90);
+            float angle = (float) Math.toRadians(hue);
             float distance = saturation * radius;
             float px = cx + (float) Math.cos(angle) * distance;
             float py = cy + (float) Math.sin(angle) * distance;
