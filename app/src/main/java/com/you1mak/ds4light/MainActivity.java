@@ -63,15 +63,10 @@ public class MainActivity extends Activity {
         content.setBackgroundColor(Color.BLACK);
 
         TextView title = new TextView(this);
-        title.setText("DS4 Light — No Root");
+        title.setText("DS 4/5 Color Changer");
         title.setTextSize(24);
         title.setGravity(Gravity.CENTER_HORIZONTAL);
         content.addView(title, matchWrap());
-
-        TextView info = new TextView(this);
-        info.setText("Bluetooth / USB • Android 12+ • Live color");
-        info.setGravity(Gravity.CENTER_HORIZONTAL);
-        content.addView(info, matchWrap());
 
         Space s1 = new Space(this);
         content.addView(s1, new LinearLayout.LayoutParams(1, dp(12)));
