@@ -162,10 +162,16 @@ public class MainActivity extends Activity {
     }
 
     private int effectiveColor() {
+        if (brightness == 0) {
+            return Color.rgb(1, 1, 1);
+        }
+
         float scale = brightness / 100f;
-        return Color.rgb(Math.round(Color.red(baseColor) * scale),
+        return Color.rgb(
+                Math.round(Color.red(baseColor) * scale),
                 Math.round(Color.green(baseColor) * scale),
-                Math.round(Color.blue(baseColor) * scale));
+                Math.round(Color.blue(baseColor) * scale)
+        );
     }
 
     private void persistAndApply() {
