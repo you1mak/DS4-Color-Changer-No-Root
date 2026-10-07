@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DS4 Light No Root</string>
+    <string name="notification_channel_name">DS4 Light</string>
+    <string name="notification_title">DS4 Light Service</string>
+</resources>
