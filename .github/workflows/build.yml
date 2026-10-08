@@ -33,6 +33,11 @@ jobs:
         with:
           gradle-version: '9.6.0'
 
+      - name: Copy app icon
+        run: |
+          mkdir -p app/src/main/res/drawable
+          cp assets/icon.png app/src/main/res/drawable/app_icon.png
+
       - name: Build debug APK
         run: gradle --no-daemon assembleDebug
 
